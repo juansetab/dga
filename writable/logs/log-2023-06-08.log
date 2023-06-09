@@ -1,0 +1,66 @@
+CRITICAL - 2023-06-08 19:06:22 --> Undefined variable $direccion
+in APPPATH\Views\inicio\index.php on line 5.
+ 1 APPPATH\Views\inicio\index.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $direccion', 'C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inicio/index', [], true)
+ 5 APPPATH\Controllers\Inicio.php(9): view('inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inicio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 19:06:26 --> Undefined variable $direccion
+in APPPATH\Views\inicio\index.php on line 5.
+ 1 APPPATH\Views\inicio\index.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $direccion', 'C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inicio/index', [], true)
+ 5 APPPATH\Controllers\Inicio.php(9): view('inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inicio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 19:06:27 --> Undefined variable $direccion
+in APPPATH\Views\inicio\index.php on line 5.
+ 1 APPPATH\Views\inicio\index.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $direccion', 'C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inicio/index', [], true)
+ 5 APPPATH\Controllers\Inicio.php(9): view('inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inicio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 19:06:27 --> Undefined variable $direccion
+in APPPATH\Views\inicio\index.php on line 5.
+ 1 APPPATH\Views\inicio\index.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $direccion', 'C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inicio/index', [], true)
+ 5 APPPATH\Controllers\Inicio.php(9): view('inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inicio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 19:06:27 --> Undefined variable $direccion
+in APPPATH\Views\inicio\index.php on line 5.
+ 1 APPPATH\Views\inicio\index.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $direccion', 'C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inicio/index', [], true)
+ 5 APPPATH\Controllers\Inicio.php(9): view('inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inicio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 19:06:27 --> Undefined variable $direccion
+in APPPATH\Views\inicio\index.php on line 5.
+ 1 APPPATH\Views\inicio\index.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $direccion', 'C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\dga\\app\\Views\\inicio\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('inicio/index', [], true)
+ 5 APPPATH\Controllers\Inicio.php(9): view('inicio/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Inicio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
