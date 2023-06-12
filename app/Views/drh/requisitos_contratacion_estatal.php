@@ -5,7 +5,6 @@
             <p><b>Dirección de Recursos Humanos</b></p>
         </div>
     </div>
-
     <div class="row g-5">
         <div class="col-md-8">
             <article class="blog-post">
@@ -13,7 +12,6 @@
                 <p style="text-align:justify">Los presentes formatos tienen como objetivo, regular, organizar y agilizar los procesos de altas, licencias y bajas del personal Directivo, Docente y de apoyo y Asistencia a la Educación de Sostenimiento Estatal.</p>
                 <p style="text-align:justify">De acuerdo al trámite a realizar, deberá de presentar los documentos que se describen en la hoja de requisitos correspondiente, en las diferentes ventanillas de la Dirección de Recursos Humanos, así mismo se deberá considerar los formatos aplicables al trámite a realizar, lo cuales deberán de contener información basada en la documentación personal y profesional.</p>
                 <p style="text-align:justify">De igual modo al momento del llenado de la solicitud de empleo, curriculum vitae y cartas de recomendación, deberá consultar las guías de llenado.</p>
-                
                 <h3>Requisitos por tipo de incidencia</h3>
                 <ul>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/REQUISITOS BAJA JUBILACION Y PENSION.docx") ?>">REQUISITOS BAJA JUBILACION Y PENSION.docx</a></li>
@@ -26,7 +24,6 @@
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/REQUISITOS NUEVO INGRESO DOCENTE.docx") ?>">REQUISITOS NUEVO INGRESO DOCENTE.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/REQUISITOS REINGRESO ADMINISTRATIVO.docx") ?>">REQUISITOS REINGRESO ADMINISTRATIVO.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/REQUISITOS REINGRESO DOCENTE.docx") ?>">REQUISITOS REINGRESO DOCENTE.docx</a></li>
-
                 </ul>
                 <h3>Obligatorio en cualquier trámite</h3>
                 <ul>
@@ -41,8 +38,6 @@
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/FORMATO CARTA DE RECOMENDACION.docx") ?>">FORMATO CARTA DE RECOMENDACION.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/FORMATO CURRICULUM VITAE.docx") ?>">FORMATO CURRICULUM VITAE.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/FORMATO DE COMPATIBILIDAD 2023 (H.S.M.).docx") ?>">FORMATO DE COMPATIBILIDAD 2023 (H.S.M.).docx</a></li>
-
-
                 </ul>
                 <h3>Guías de llenado</h3>
                 <ul>
@@ -67,7 +62,7 @@
                 <ul>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/CONSTANCIA DE NO ADEUDO Y NOTIFICACION DE LICENCIA 2023.docx") ?>">CONSTANCIA DE NO ADEUDO Y NOTIFICACION DE LICENCIA 2023.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/LICENCIA ASUNTOS PARTICULARES.docx") ?>">LICENCIA ASUNTOS PARTICULARES.docx</a></li>
-                    <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/LICENCIA COMISION SINDICAL.docx") ?>">LICENCIA COMISION SINDICAL.docx</a></li>
+                    <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/LICENCIA COMISION SINDICAL.docx") ?>">LICENCIA COM    ISION SINDICAL.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/LICENCIA ELECCION POPULAR.docx") ?>">LICENCIA ELECCION POPULAR.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/LICENCIA PUESTO CONFIANZA.docx") ?>">LICENCIA PUESTO CONFIANZA.docx</a></li>
                 </ul>
@@ -76,7 +71,6 @@
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/FORMATO DE VALIDACION ISSET.xlsx") ?>">FORMATO DE VALIDACION ISSET.xlsx</a></li>
                 </ul>
             </article>
-
         </div>
         <?= view("template/right") ?>
     </div>

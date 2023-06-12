@@ -30,7 +30,7 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Otros formatos</a></li>
+                            <li><a class="dropdown-item" href="<?= base_url("drh/portal_incidencias_estatal") ?>">Portal de incidencias estatal</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
