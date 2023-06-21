@@ -27,11 +27,10 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="<?= base_url("drh/requisitos_contratacion_estatal") ?>">Requisitos y formatos de contratación estatal</a></li>
                             <li><a class="dropdown-item" href="#">Requisitos y formatos de contratación federal</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="<?= base_url("drh/portal_incidencias_estatal") ?>">Portal de incidencias estatal</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="<?= base_url("portal") ?>">Portal de trámites</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="https://tabasco.gob.mx/avisos-de-privacidad-1">Avisos de privacidad</a>

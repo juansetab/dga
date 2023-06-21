@@ -10,11 +10,11 @@
         </div>
         <div class="p-4">
             <h4>Teléfono</h4>
-            <p>993 427 0161 Ext. 412</p>
+            <p><a href="tel:993 427 0161">993 427 0161</a> Ext. 412</p>
         </div>
         <div class="p-4">
             <h4>Dirección</h4>
-            <p>Calle Héroes del 47 S/N Col. Gil y Sáenz, C.P. 86060 Villhermosa, Tabasco MX</p>
+            <p>Calle Héroes del 47 S/N Col. Gil y Sáenz, C.P. 86060 Villahermosa, Tabasco MX</p>
         </div>
         <div class="p-4">
             <h4>Sitio principal de la SETAB</h4>

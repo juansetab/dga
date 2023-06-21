@@ -24,6 +24,7 @@
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/REQUISITOS NUEVO INGRESO DOCENTE.docx") ?>">REQUISITOS NUEVO INGRESO DOCENTE.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/REQUISITOS REINGRESO ADMINISTRATIVO.docx") ?>">REQUISITOS REINGRESO ADMINISTRATIVO.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/REQUISITOS REINGRESO DOCENTE.docx") ?>">REQUISITOS REINGRESO DOCENTE.docx</a></li>
+                    <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/REQUISITOS RENUNCIA.docx") ?>">REQUISITOS RENUNCIA.docx</a></li>
                 </ul>
                 <h3>Obligatorio en cualquier trámite</h3>
                 <ul>
@@ -62,7 +63,7 @@
                 <ul>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/CONSTANCIA DE NO ADEUDO Y NOTIFICACION DE LICENCIA 2023.docx") ?>">CONSTANCIA DE NO ADEUDO Y NOTIFICACION DE LICENCIA 2023.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/LICENCIA ASUNTOS PARTICULARES.docx") ?>">LICENCIA ASUNTOS PARTICULARES.docx</a></li>
-                    <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/LICENCIA COMISION SINDICAL.docx") ?>">LICENCIA COM    ISION SINDICAL.docx</a></li>
+                    <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/LICENCIA COMISION SINDICAL.docx") ?>">LICENCIA COMISION SINDICAL.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/LICENCIA ELECCION POPULAR.docx") ?>">LICENCIA ELECCION POPULAR.docx</a></li>
                     <li><a href="<?= base_url("public/docs/drh/formatos_contratacion_estatal/2023/LICENCIA PUESTO CONFIANZA.docx") ?>">LICENCIA PUESTO CONFIANZA.docx</a></li>
                 </ul>
