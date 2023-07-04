@@ -48,48 +48,72 @@
                             <div data-i18n="Analytics">Inicio</div>
                         </a>
                     </li>
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-highlight"></i>
-                            <div data-i18n="Layouts">Trámites</div>
+                    <li class="menu-item <?= CORE_CONTROLLER == "Portal_tramites" ? "active open" : "" ?>">
+                        <a href=" javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-highlight"></i>
+                        <div data-i18n="Layouts">Trámites</div>
                         </a>
-
                         <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="<?= base_url("portal/tramites_documentacion_estatal") ?>" class="menu-link">
-                                    <div>Documentación estatal</div>
+                            <li class="menu-item <?= CORE_CONTROLLER . "/" . CORE_METHOD == "Portal_tramites/contrataciones" ? "active" : "" ?>">
+                                <a href="<?= base_url("portal_tramites/contrataciones") ?>" class="menu-link">
+                                    <div>Contrataciones</div>
+                                </a>
+                            </li>
+                            <li class="menu-item <?= CORE_CONTROLLER . "/" . CORE_METHOD == "Portal_tramites/solicitudes_pago" ? "active" : "" ?>">
+                                <a href="<?= base_url("portal_tramites/solicitudes_pago") ?>" class="menu-link">
+                                    <div>Solicitud de pago de prestaciones</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-file-blank"></i>
-                            <div data-i18n="Layouts">Formatos</div>
+                    <li class="menu-item <?= CORE_CONTROLLER == "Portal_formatos" ? "active open" : "" ?>">
+                        <a href=" javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-file-blank"></i>
+                        <div data-i18n="Layouts">Formatos</div>
                         </a>
-
                         <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="<?= base_url("portal/solicitud_empleo_estatal") ?>" class="menu-link">
+                            <li class="menu-item <?= CORE_CONTROLLER . "/" . CORE_METHOD == "Portal_formatos/solicitud_empleo_estatal" ? "active" : "" ?>">
+                                <a href="<?= base_url("portal_formatos/solicitud_empleo_estatal") ?>" class="menu-link">
                                     <div>Solicitud de empleo estatal</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-book-reader"></i>
-                            <div data-i18n="Layouts">Revisión</div>
+                    <?php if(array_search("Revisión", array_column(session()->get("user_permissions"), "parent_node")) !== false){ ?>
+                    <li class="menu-item <?= CORE_CONTROLLER == "Portal_revision" ? "active open" : "" ?>">
+                        <a href=" javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-book-reader"></i>
+                        <div data-i18n="Layouts">Revisión</div>
                         </a>
-
                         <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="<?= base_url("portal/revisa_tramites_estatal") ?>" class="menu-link">
-                                    <div>Revisa tramites estatal</div>
+                            <li class="menu-item <?= CORE_CONTROLLER . "/" . CORE_METHOD == "Portal_revision/revisa_docs_contratacion" ? "active" : "" ?>">
+                                <a href="<?= base_url("portal_revision/revisa_docs_contratacion") ?>" class="menu-link">
+                                    <div>Revisa documentos de contratación</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
+                    <?php }
+                    if(array_search("Subir información", array_column(session()->get("user_permissions"), "parent_node")) !== false){ ?>
+                    <li class="menu-item <?= CORE_CONTROLLER == "Portal_subida" ? "active open" : "" ?>">
+                        <a href=" javascript:void(0);" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-spreadsheet  "></i>
+                        <div data-i18n="Layouts">Subir información</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item <?= CORE_CONTROLLER . "/" . CORE_METHOD == "Portal_subida/layout_contratacion" ? "active" : "" ?>">
+                                <a href="<?= base_url("portal_subida/layout_contratacion") ?>" class="menu-link">
+                                    <div>Layout contratación</div>
+                                </a>
+                            </li>
+                            <li class="menu-item <?= CORE_CONTROLLER . "/" . CORE_METHOD == "Portal_subida/layout_solicitud" ? "active" : "" ?>">
+                                <a href="<?= base_url("portal_subida/layout_solicitud") ?>" class="menu-link">
+                                    <div>Layout solicitud de pago</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <?php } ?>
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Otros</span>
                     </li>
@@ -134,8 +158,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block">John Doe</span>
-                                                    <small class="text-muted">Admin</small>
+                                                    <span class="fw-semibold d-block"><?= session("user_data")["username"] ?></span>
+                                                    <small class="text-muted"><?= session("user_data")["nombre"] ?></small>
                                                 </div>
                                             </div>
                                         </a>

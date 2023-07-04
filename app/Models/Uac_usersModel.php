@@ -9,7 +9,7 @@ class Uac_usersModel extends Model{
     protected $useAutoIncrement = true;
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
-    protected $allowedFields = ["id", "username", "psswrd", "name", "first_lastname", "second_lastname", "img", "email", "status", "creation"];
+    protected $allowedFields = ["id", "username", "psswrd", "name", "first_lastname", "second_lastname", "img", "email", "tel", "status", "creation"];
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';

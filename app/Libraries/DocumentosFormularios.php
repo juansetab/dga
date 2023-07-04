@@ -391,7 +391,7 @@ class DocumentosFormularios
                 }else{
                     $fecha_ini = date("d/m/Y", strtotime($_POST["empleo_ultimo".$i."_inicio"]));
                     $fecha_fin = date("d/m/Y", strtotime($_POST["empleo_ultimo".$i."_final"]));
-                    if($fecha_ini == "31/12/1969" || $fecha_fin == "31/12/1969")
+                    if($fecha_ini == "31/12/1969" || $fecha_ini = '01/01/1970' || $fecha_fin == "31/12/1969" || $fecha_fin == '01/01/1970')
                         $desc_fecha = "";
                     else
                         $desc_fecha = "DE " . $fecha_ini . " A " . $fecha_fin;

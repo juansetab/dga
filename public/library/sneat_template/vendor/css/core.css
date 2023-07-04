@@ -2814,6 +2814,12 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
 }
 
+.btn-xs, .btn-group-xs > .btn {
+  padding: 0.10rem 0.700rem;
+  font-size: 0.50rem;
+  border-radius: 0.20rem;
+}
+
 .fade {
   transition: opacity 0.15s linear;
 }
@@ -6227,6 +6233,11 @@ a.invert-bg-dark:hover, a.invert-bg-dark:focus {
   font-size: 0.75rem;
   letter-spacing: 1px;
 }
+
+.table td {
+  font-size: 0.75rem;
+}
+
 .table:not(.table-dark) th {
   color: #566a7f;
 }

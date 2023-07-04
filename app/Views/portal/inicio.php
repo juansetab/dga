@@ -22,9 +22,18 @@
   <div class="col-md-6 col-lg-4">
     <div class="card mb-3">
       <div class="card-body">
-        <h5 class="card-title">Documentación estatal</h5>
-        <p class="card-text">Subir documentación para nuevo ingreso o reingreso de alta estatal</p>
-        <a href="<?= base_url("portal/tramites_documentacion_estatal") ?>" class="btn btn-setab1">Subir documentación</a>
+        <h5 class="card-title">Documentación</h5>
+        <p class="card-text">Subir documentación para contratación</p>
+        <a href="<?= base_url("portal_tramites/contrataciones") ?>" class="btn btn-setab1">Ver trámite</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Solicitudes de pago</h5>
+        <p class="card-text">Solicitudes para el pago de prestaciones</p>
+        <a href="<?= base_url("portal_formatos/solicitud_empleo_estatal") ?>" class="btn btn-setab1">Ver trámite</a>
       </div>
     </div>
   </div>
@@ -32,12 +41,11 @@
     <div class="card mb-3">
       <div class="card-body">
         <h5 class="card-title">Rellena solicitud de empleo</h5>
-        <p class="card-text">Genera una solicitud de empleo en base a los lineamientos de la SETAB</p>
-        <a href="<?= base_url("portal/solicitud_empleo_estatal") ?>" class="btn btn-setab1">Ir a formulario</a>
+        <p class="card-text">Genera una solicitud de empleo para contratación estatal</p>
+        <a href="<?= base_url("portal_formatos/solicitud_empleo_estatal") ?>" class="btn btn-setab1">Ir a formulario</a>
       </div>
     </div>
   </div>
-
 </div>
 <div class="row">
   <div class="col-lg-12 mb-4 order-0">

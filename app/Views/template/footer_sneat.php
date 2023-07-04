@@ -5,8 +5,7 @@
         </div>
     </div>
 </footer>
-<script>
-</script>
+
 <div class="content-backdrop fade"></div>
 </div>
 </div>
@@ -18,10 +17,8 @@
 <script src="<?= base_url("public/library/sneat_template") ?>/vendor/js/bootstrap.js"></script>
 <script src="<?= base_url("public/library/sneat_template") ?>/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 <script src="<?= base_url("public/library/sneat_template") ?>/vendor/js/menu.js"></script>
-<script src="<?= base_url("public/library/sneat_template") ?>/vendor/libs/apex-charts/apexcharts.js"></script>
 <script src="<?= base_url("public/library/sneat_template") ?>/js/main.js"></script>
-<script src="<?= base_url("public/library/sneat_template") ?>/js/dashboards-analytics.js"></script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-</body>
 
+
+</body>
 </html>

@@ -3,14 +3,14 @@ namespace App\Models;
 use CodeIgniter\Model;
 use Exception;
 
-class Docs_subidosModel extends Model{
+class V_docs_tipo_contratacionModel extends Model{
 
-protected $table = 'docs_subidos';
+protected $table = 'v_docs_tipo_contratacion';
 protected $primaryKey = 'id';
 protected $useAutoIncrement = true;
 protected $returnType     = 'array';
 protected $useSoftDeletes = false;
-protected $allowedFields = ["id_tramite","nombre","ruta","status","creacion"];
+protected $allowedFields = ["id_documento","id_tipo_tramite","nombre_tramite","nombre_documento","name","label","tooltip","required","accept","orden","status_documento"];
 protected $useTimestamps = false;
 protected $createdField  = 'created_at';
 protected $updatedField  = 'updated_at';

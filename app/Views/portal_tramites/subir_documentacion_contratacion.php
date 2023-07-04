@@ -6,7 +6,7 @@
                 <p class="fw-light fst-italic" style="font-size:14px; text-align:justify">*Los documentos solicitados para validación pueden no ser todos los que deba presentar físicamente en ventanilla. Para ver la lista completa, formatos y guías de llenado
                     <a href="<?= base_url("drh/requisitos_contratacion_estatal") ?>" target="_blank"><b> click aquí</b></a>
                 </p>
-                <form action="<?= base_url("portal/guardar_documentacion_estatal") ?>" method="POST" enctype="multipart/form-data">
+                <form action="<?= base_url("portal_tramites/guardar_documentacion_contratacion") ?>" method="POST" enctype="multipart/form-data">
                     <input type="hidden" id="id" name="id" value="<?= $tramite["id"] ?>">
                     <?php
                     foreach ($documentacion as $r) { ?>

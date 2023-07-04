@@ -35,6 +35,9 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="https://tabasco.gob.mx/avisos-de-privacidad-1">Avisos de privacidad</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="https://tabasco.gob.mx/educacion/">Página principal de la SETAB</a>
+                    </li>
                 </ul>
             </div>
         </div>

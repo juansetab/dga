@@ -19,12 +19,12 @@
             }
         }).then((result) => {
             if (result.dismiss === Swal.DismissReason.timer) {
-                location.href = '<?= base_url("portal/tramites_documentacion_estatal") ?>';
+                location.href = '<?= base_url("portal_tramites/contrataciones") ?>';
             }
         });
 
         setTimeout(() => {
-            location.href = '<?= base_url("portal/tramites_documentacion_estatal") ?>';
+            location.href = '<?= base_url("portal_tramites/contrataciones") ?>';
         }, 42000);
 
     }

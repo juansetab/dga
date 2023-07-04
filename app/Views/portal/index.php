@@ -14,12 +14,12 @@
             <form method="POST" action="<?= base_url("accesos/start") ?>">
                 <div class="col-md-6 col-sm-12">
                     <div class="col-sm-12">
-                        <label for="usuario"><b>Usuario:</b></label>
-                        <input type="text" name="usuario" class="form-control form-control-sm" required>
+                        <label for="user"><b>Usuario:</b></label>
+                        <input type="text" name="user" class="form-control form-control-sm" required>
                     </div>  
                     <div class="col-sm-12">
-                        <label for="password"><b>Contraseña:</b></label>
-                        <input type="password" name="password" class="form-control form-control-sm" required>
+                        <label for="pass"><b>Contraseña:</b></label>
+                        <input type="password" name="pass" class="form-control form-control-sm" required>
                     </div>
                     <br>
                     <div class="col-sm-12">

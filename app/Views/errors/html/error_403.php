@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title><?= lang('Errors.pageNotFound') ?></title>
+    <title>403</title>
     <link rel="shortcut icon" href="<?= base_url("public/images") ?>/favicon.png" type="image/png" />
     <style>
         div.logo {
@@ -70,14 +70,10 @@
 </head>
 <body>
     <div class="wrap">
-        <h1>404</h1>
+        <h1>403</h1>
 
         <p>
-            <?php if (ENVIRONMENT !== 'production') : ?>
-                <?= nl2br(esc($message)) ?>
-            <?php else : ?>
-                <?= lang('Errors.sorryCannotFind') ?>
-            <?php endif ?>
+            Prohibido. No tiene acceso a este recurso. <a href="<?= base_url("portal")?>">Inicie sesión</a> para poder acceder
         </p>
     </div>
 </body>

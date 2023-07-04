@@ -9,7 +9,7 @@ class Dev extends Controller
 
 	public function __construct()
     {
-		die(view("errors/html/error_404"));
+		//die(view("errors/html/error_404"));
     }
 
 	public function phpinfo()

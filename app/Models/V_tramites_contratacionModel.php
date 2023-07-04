@@ -3,14 +3,14 @@ namespace App\Models;
 use CodeIgniter\Model;
 use Exception;
 
-class TramitesModel extends Model{
+class V_tramites_contratacionModel extends Model{
 
-protected $table = 'tramites';
+protected $table = 'v_tramites_contratacion';
 protected $primaryKey = 'id';
 protected $useAutoIncrement = true;
 protected $returnType     = 'array';
 protected $useSoftDeletes = false;
-protected $allowedFields = ["id","id_nivel","id_tipo_tramite","id_usuario","status","creacion"];
+protected $allowedFields = ["id_tramite_contratacion","id_usuario","id_nivel","id_area","nombre_nivel","nombre_area","nombre_tramite","nombre_usuario","observaciones","status","creacion"];
 protected $useTimestamps = false;
 protected $createdField  = 'created_at';
 protected $updatedField  = 'updated_at';

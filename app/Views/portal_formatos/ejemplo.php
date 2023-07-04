@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col-md mb-4 mb-md-0">
-    <h5 class="pb-1 mb-4">Captura solicitud de empleo</h5>
+        <h5 class="pb-1 mb-4">Captura solicitud de empleo</h5>
+        
         <form id="form_data">
             <div class="accordion mt-3"" id=" accordionData">
                 <div class="card accordion-item">
@@ -18,7 +19,7 @@
                                 </div>
                                 <div class="col-sm-12 col-md-4 col-lg-4">
                                     <label>Puesto contratado:</label>
-                                    <select class="form-control form-control-sm" id="inicial_puesto_solicitado" name="inicial_puesto_solicitado" title="INDICAR EL PUESTO QUE SOLICITA">
+                                    <select class="form-select form-select-sm" id="inicial_puesto_solicitado" name="inicial_puesto_solicitado" title="INDICAR EL PUESTO QUE SOLICITA">
                                         <option value="">SELECCIONE UNA OPCION</option>
                                         <option value="DOCENTE">DOCENTE</option>
                                         <option value="ADMINISTRATIVO">ADMINISTRATIVO</option>
@@ -104,7 +105,7 @@
                                 </div>
                                 <div class="col-sm-12 col-md-3 col-lg-3">
                                     <label>Estado civil:</label>
-                                    <select class="form-control form-control-sm" id="personal_edo_civil" name="personal_edo_civil" onchange="soltero_casado()">
+                                    <select class="form-select form-select-sm" id="personal_edo_civil" name="personal_edo_civil" onchange="soltero_casado()">
                                         <option disabled selected>SELECCIONE UNA OPCION</option>
                                         <option value="SOLTERO(A)">SOLTERO(A)</option>
                                         <option value="CASADO(A)">CASADO(A)</option>
@@ -179,7 +180,7 @@
                                 </div>
                                 <div class="col-sm-12 col-md-3 col-lg-3">
                                     <label>¿Tiene licencia de manejo?:</label>
-                                    <select class="form-control form-control-sm" id="doc_licencia" name="doc_licencia" onchange="activefields(this, 'div_doc_tipo_licencia', 'SI')">
+                                    <select class="form-select form-select-sm" id="doc_licencia" name="doc_licencia" onchange="activefields(this, 'div_doc_tipo_licencia', 'SI')">
                                         <option value="">SELECCIONE UNA OPCION</option>
                                         <option value="SI">SI</option>
                                         <option value="NO">NO</option>
@@ -952,6 +953,7 @@
 </div>
 <script>
     window.onload = function() {
+    
         document.querySelectorAll("input, select").forEach(function(current) {
             current.addEventListener("blur", function() {
                 if (this.type != "checkbox") {

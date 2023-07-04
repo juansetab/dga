@@ -1,12 +1,13 @@
 <?php 
 
 namespace App\Libraries;
-use App\Models\Uac_pagesModel;
+
+use App\Models\Uac_usersModel;
 use App\Models\V_user_privilegesModel;
 
 class UserControl{
     public static function login_validation($user, $pass){
-        $model_users = new Uac_pagesModel();
+        $model_users = new Uac_usersModel();
         $user_result = $model_users->getAll(substr($user, 0, 3));
         if($model_users === false)
             return array("status" => false, "msg" => "Ha ocurrido un error, contacte al administrador");
@@ -80,7 +81,7 @@ class UserControl{
             return true;
         }else{
             $data = array("controller" => $controller, "page" => $page, "msg" => $permissions["msg"]);
-            die(view('accesos/login', $data));
+            die(view("template/header_info").view("portal/index").view("template/footer_info"));
         }
     }
 
@@ -92,12 +93,4 @@ class UserControl{
             die(json_encode(array("status" => 0, "msg" => "No tiene permitido realizar esta acción")));
         }
     }
-
-    /**
-     * Obtiene la consulta del usuario
-     */
-    private function database_user_page($user, $page){
-
-    }
-    
 }

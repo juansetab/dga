@@ -19,14 +19,15 @@ class Accesos extends Controller
 
     public function start()
     {   
-        if (!isset($_POST["usuario"], $_POST["password"]))
-            die(view("errors/html/error_404"));
+        if (!isset($_POST["user"], $_POST["pass"]))
+            return redirect()->to(base_url('portal?status=0&description=Error al ingresar usuario y contraseña'));
         $response = \App\Libraries\UserControl::login_validation($_POST["user"], $_POST["pass"]);
         if ($response['status'] === true) {
             $url_request = explode("?", $_SERVER["HTTP_REFERER"])[0]; //Quita variables GET si existen
-            return redirect()->to("portal/inicio");
+            $url_redirect = $url_request != base_url("portal") ?  $_SERVER["HTTP_REFERER"] : base_url("portal/inicio");    
+            return redirect()->to($url_redirect);
         } else {
-            return redirect()->to(base_url('accesos/login?status=0&description= ' . $response['msg']));
+            return redirect()->to(base_url('portal?status=0&description= ' . $response['msg']));
         }
     }
 

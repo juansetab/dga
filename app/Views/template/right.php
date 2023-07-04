@@ -2,7 +2,7 @@
     <div class="position-sticky" style="top: 2rem;">
         <div class="p-4 mb-3 bg-light rounded">
             <h4>Acerca de</h4>
-            <p class="mb-0">La Dirección General de Administración es la encargada de administrar los Recursos Humanos, Materiales y Financieros de la Secretaría de Educación de Tabasco</p>
+            <p class="mb-0" style="text-align:justify">La Dirección General de Administración (DGA) es una entidad gubernamental de la Secretaría de Educación de Tabasco. La función principal de la DGA es administrar y supervisar los recursos y servicios necesarios para el óptimo funcionamiento de esta Secretaría.</p>
         </div>
         <div class="p-4">
             <h4>Horario de atención</h4>
