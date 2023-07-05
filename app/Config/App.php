@@ -17,7 +17,7 @@ class App extends BaseConfig
      *
      *    http://example.com/
      */
-    public string $baseURL = 'http://10.57.19.117';
+    public string $baseURL = 'http://192.168.2.118/dga/';
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
@@ -42,7 +42,7 @@ class App extends BaseConfig
      * something else. If you are using mod_rewrite to remove the page set this
      * variable so that it is blank.
      */
-    public string $indexPage = 'index.php?';
+    public string $indexPage = '';
 
     /**
      * --------------------------------------------------------------------------
@@ -59,7 +59,7 @@ class App extends BaseConfig
      *
      * WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
      */
-    public string $uriProtocol = 'PATH_INFO';
+    public string $uriProtocol = 'REQUEST_URI';
 
     /**
      * --------------------------------------------------------------------------
