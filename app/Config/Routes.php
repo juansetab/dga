@@ -28,8 +28,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/inicio/', 'Inicio::index');
-$routes->get('/drh/requisitos_contratacion_estatal', 'Drh::requisitos_contratacion_estatal');
+$routes->get('/', 'Inicio::index');
 //$routes->get('/dev/', 'Dev::index');
 /*
  * --------------------------------------------------------------------
