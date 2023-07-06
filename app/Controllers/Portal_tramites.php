@@ -18,12 +18,12 @@ class Portal_tramites extends BaseController
      * VISTAS
      */
 
-     //CONTRATACIONES
+    //CONTRATACIONES
 
 
     public function contrataciones()
     {
-        if(!isset(session()->get("user_data")["id"]))
+        if (!isset(session()->get("user_data")["id"]))
             return view("errors/html/error_403");
         $V_tramites_contratacionModel = new V_tramites_contratacionModel();
         $tramites = $V_tramites_contratacionModel->where("id_usuario", session()->get("user_data")["id"])->orderBy("id_tramite_contratacion", "DESC")->findAll(10);
@@ -33,7 +33,7 @@ class Portal_tramites extends BaseController
 
     public function subir_documentacion_contratacion()
     {
-        if(!isset(session()->get("user_data")["id"]))
+        if (!isset(session()->get("user_data")["id"]))
             return view("errors/html/error_403");
         if (!isset($_GET["data"]))
             return json_encode(array("status" => 0, "msg" => "Falta información"));
@@ -49,7 +49,7 @@ class Portal_tramites extends BaseController
 
     public function guardar_documentacion_contratacion()
     {
-        if(!isset(session()->get("user_data")["id"]))
+        if (!isset(session()->get("user_data")["id"]))
             return view("errors/html/error_403");
         if (!isset($_POST["id"]))
             return json_encode(array("status" => 0, "msg" => "Falta información"));
@@ -90,7 +90,7 @@ class Portal_tramites extends BaseController
 
     public function detalle_documentacion_contratacion()
     {
-        if(!isset(session()->get("user_data")["id"]))
+        if (!isset(session()->get("user_data")["id"]))
             return view("errors/html/error_403");
         if (!isset($_GET["data"]))
             return json_encode(array("status" => 0, "msg" => "Falta información"));
@@ -109,7 +109,7 @@ class Portal_tramites extends BaseController
 
     public function solicitudes_pago()
     {
-        if(!isset(session()->get("user_data")["id"]))
+        if (!isset(session()->get("user_data")["id"]))
             return view("errors/html/error_403");
         $V_tramites_solicitud_pagoModel = new V_tramites_solicitud_pagoModel();
         $tramites = $V_tramites_solicitud_pagoModel->where("id_usuario", session()->get("user_data")["id"])->orderBy("id_tramite_solicitud_pago", "DESC")->findAll(10);
@@ -119,7 +119,7 @@ class Portal_tramites extends BaseController
 
     public function subir_documentacion_solicitud_pago()
     {
-        if(!isset(session()->get("user_data")["id"]))
+        if (!isset(session()->get("user_data")["id"]))
             return view("errors/html/error_403");
         if (!isset($_GET["data"]))
             return json_encode(array("status" => 0, "msg" => "Falta información"));
@@ -135,5 +135,30 @@ class Portal_tramites extends BaseController
         $niveles = $C_nivelesModel->where("status", 1)->where("pagador", 1)->notLike("nombre", "HONORARIO")->findAll();
         $data = ["tramite" => $tramite[0], "documentacion" => $documentacion, "tipos_solicitud" => $tipos_solicitud, "niveles" => $niveles];
         return view("template/header_sneat") . view("portal_tramites/subir_documentacion_solicitud_pago", $data) . view("template/footer_sneat");
+    }
+
+    /**
+     * CRUD
+     */
+
+    public function searchCt()
+    {
+        sleep(5);
+        if (!isset(session()->get("user_data")["id"]))
+            return view("errors/html/error_403");
+        if (!isset($_GET["data"]))
+            return json_encode(array("status" => 0, "msg" => "Falta información"));
+        $array = array(array("id" => 5000, "clave" => $_GET["data"], "nombre" => "Dolores Ocaña Brindis"));
+        return json_encode(array("status" => 1, "msg" => "Centro de trabajo: Dolores Ocaña Brindis", "data" => $array[0]));
+    }
+
+    public function searchCat()
+    {
+        if (!isset(session()->get("user_data")["id"]))
+            return view("errors/html/error_403");
+        if (!isset($_GET["data"]))
+            return json_encode(array("status" => 0, "msg" => "Falta información"));
+        $array = array(array("id" => 220, "clave" => $_GET["data"], "nombre" => "Maestro electrico radio"));
+        return json_encode(array("status" => 1, "msg" => "Categoría: Maestro electrico radio", "data" => $array[0]));
     }
 }

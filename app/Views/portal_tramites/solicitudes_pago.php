@@ -29,7 +29,7 @@
                                                 <button title="Subir documentación" class="btn btn-setab2" disabled><i class='bx bx-cloud-upload'></i></button>
                                             <?php } else { ?>
                                                 <a href="<?= base_url("portal_tramites/detalle_documentacion_solicitud_pago") . "?data=" . $r["id_tramite_solicitud_pago"] ?>" title="Ver comentarios" class="btn btn-setab2"><i class='bx bx-list-check'></i></a>
-                                            <?php } ?>  
+                                            <?php } ?>
                                         </div>
                                     </td>
                                     <td><?= $r["nombre_nivel"] ?></td>
@@ -59,4 +59,5 @@
         }
         ?>
     }
+    
 </script>

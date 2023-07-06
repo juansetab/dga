@@ -28,15 +28,15 @@
                         <div class="col-sm-12 col-md-6 col-lg-6 mb-2">
                             <label>Centro de trabajo:</label>
                             <div class="input-group input-group-sm">
-                                <button class="btn btn-setab1" type="button" id="button-addon1"><i class='bx bx-search-alt'></i> Buscar</button>
-                                <input type="text" class="form-control" id="nombre_cct" name="nombre_cct" required readonly>
+                                <button class="btn btn-setab1" type="button" id="search_ct"><i class='bx bx-search-alt'></i> Buscar</button>
+                                <input type="text" class="form-control" id="nombre_ct" name="nombre_ct" required readonly>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6 mb-2">
                             <label>Categoría:</label>
                             <div class="input-group input-group-sm">
-                                <button class="btn btn-setab1" type="button" id="button-addon1"><i class='bx bx-search-alt'></i> Buscar</button>
-                                <input type="text" class="form-control" id="nombre_cct" name="nombre_cct" required readonly>
+                                <button class="btn btn-setab1" type="button" id="search_cat"><i class='bx bx-search-alt'></i> Buscar</button>
+                                <input type="text" class="form-control" id="nombre_cat" name="nombre_cat" required readonly>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4 col-lg-4 mb-2">
@@ -115,7 +115,6 @@
         document.querySelector("form").onsubmit = function() {
             document.querySelector("#btn-submit").disabled = true;
         };
-
         maxSize = 3000000;
         array = <?= json_encode(array_column($documentacion, "name")) ?>;
         array.forEach(function(value, index) {
@@ -135,5 +134,66 @@
                 }
             });
         });
+
+        document.querySelector("#search_ct").onclick = function() {
+            searchData('Escriba la clave del CT', 'ct')
+        };
+
+        document.querySelector("#search_cat").onclick = function() {
+            searchData('Escriba la clave de la Categoría', 'cat')
+        };
+    }
+
+    function searchData(titulo, input) {
+        Swal.fire({
+            title: titulo,
+            input: 'text',
+            inputAttributes: {
+                autocapitalize: 'off'
+            },
+            showCancelButton: true,
+            confirmButtonText: 'Buscar',
+            cancelButtonText: 'Cancelar',
+            confirmButtonColor: '#B38E5D',
+            showLoaderOnConfirm: true,
+            preConfirm: (search) => {
+                return fetch('<?= base_url("portal_tramites/search") ?>' + input + '?data=' + search)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(response.statusText)
+                        }
+                        return response.json()
+                    })
+                    .catch(error => {
+                        Swal.showValidationMessage(
+                            `La solicitud falló: ${error}`
+                        )
+                    })
+            },
+            allowOutsideClick: () => !Swal.isLoading()
+        }).then((result) => {
+            if (result.isConfirmed) {
+                console.log(result.value.status);
+                if (result.value.status == 1) {
+                    document.querySelector("#id_" + input).value = result.value.data.id;
+                    document.querySelector("#nombre_" + input).value = result.value.data.nombre;
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Hallado!',
+                        text: result.value.msg,
+                        confirmButtonColor: '#B38E5D'
+                    });
+                } else {
+                    document.querySelector("#id_" + input).value = "";
+                    document.querySelector("#nombre_" + input).value = "";
+                    Swal.fire({
+                        icon: 'error',
+                        title: '¡Error!',
+                        text: result.value.msg,
+                        confirmButtonColor: '#B38E5D'
+                    });
+                }
+            }
+        })
     }
 </script>

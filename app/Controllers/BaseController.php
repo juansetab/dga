@@ -51,7 +51,7 @@ abstract class BaseController extends Controller
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
         $router = service('router'); 
-        $controller = $router->controllerName();
+        $controller = $router->controllerName();    
         $method = $router->methodName();
         define("CORE_CONTROLLER", substr($controller, 17, 100));
         define("CORE_METHOD", $method);
